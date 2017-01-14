@@ -1,1 +1,1 @@
-alert("Hello this is --> Test 'js' files <--");
+//alert("Hello this is --> Test 'js' files <--");
