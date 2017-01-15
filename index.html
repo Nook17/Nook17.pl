@@ -10,6 +10,8 @@
 	
 	<script src="js/scripts.js"></script>
 	
+<!--	<link href="css/ResetStylesAdvanced.css" rel="stylesheet">-->
+	<link href="css/ResetStylesSimple.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 
 </head>
@@ -17,39 +19,74 @@
 	<header>
 		<h1>Nook17.pl</h1>
 		<nav>
+            <h2>Główna nawigacja</h2>
 		    <ol>
-		        <li>artykuły</li>
-		        <li>Mój warsztat</li>
-		        <li>Książki</li>
-		        <li>Kontakt</li>
-		        <li>O mnie</li>
+		        <li><a href="#">artykuły</a></li>
+		        <li><a href="#">Książki</a></li>
+		        <li><a href="#">Linki</a></li>
+		        <li><a href="#">Forum</a></li>
+		        <li><a href="#">Mój warsztat</a></li>
+		        <li><a href="#">Oferta</a></li>
+		        <li><a href="#">Kontakt</a></li>
 		    </ol>
 		</nav>
 	</header>
     <div id="info"><h1>Ta strona jest o...</h1></div>
+    <div id="slider"><h2>Slider z artykułami</h2></div>
     <section>
-        <h2>Tu będą artykoły</h2>
+        <h2>Tu będą artykuły</h2>
         <article>
-            <h3>Pierwszy artykół</h3>
+            <h3>Pierwszy artykuł</h3>
+            <p>Dodano dnia ...</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi.</p>
+            <p>Consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi.</p>
         </article>
         <article>
-            <h3>Drugi artykół</h3>
+            <h3>Drugi artykuł</h3>
+            <p>Dodano dnia ...</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos.</p>
+            <p>Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos.</p>
         </article>
-        <aside>
-            <h4>Tu coś jeszcze będzie</h4>
-            <p>To ma być po prawej stronie</p>
-        </aside>
-<!--
-        <sidebar>
-            <h4>Tu coś jeszcze będzie</h4>
-            <p>To ma być po prawej stronie</p>
-        </sidebar>
--->
     </section>
+    <aside>
+        <h2>Tu będzie coś z boku</h2>
+        <p>To ma być po prawej stronie</p>
+        <div id="login">
+            <h3>Zaloguj się</h3>   
+            <form action="login.php" method="post">
+                <input type="text" placeholder="Login" onFocus="this.placeholder=''" onBlur="this.placeholder='Login'">
+                <input type="password" placeholder="Password" onFocus="this.placeholder=''" onBlur="this.placeholder='Password'">
+                <input type="submit" value="Zaloguj się">
+            </form>
+        </div>
+    </aside>
+<!--
+    <sidebar>
+        <h4>Tu coś jeszcze będzie</h4>
+        <p>To ma być po prawej stronie</p>
+    </sidebar>
+-->
     <footer>
-			Copyright &copy; 2017 - arek@nook17.pl. All rights reserved. 
+        <div id="newsLetter">
+            <h2>Zapisz się na newsletter</h2>
+            <form action="newsLetter.php" method="post">
+                <input type='text' name='email' value='' placeholder='E-mail'/> 
+                <input type='checkbox' name='legalAgreement' value='1'>Wyrażam zgodę na otrzymywanie drogą elektroniczną Newslettera od devboard.pl zgodnie z Ustawą o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r (Dz. U. nr 144 poz.1204).
+                <button type='submit'>Zapisz się</button>
+            </form>
+        </div>  
+        <span>Menu główne</span>
+        <ul>
+            <li><a href="#">artykuły</a></li>
+            <li><a href="#">Książki</a></li>
+            <li><a href="#">Linki</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Mój warsztat</a></li>
+            <li><a href="#">Oferta</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <p>Copyright &copy; 2017 - <a href="mailto:arek@nook17.pl">arek@nook17.pl.</a> All rights reserved.</p>
+        <p>Wszelkie prawa zastrzeżone, kopiowanie materiałów zawartych na stronie bez uprzedniej zgody właściciela jest zabronione</p>
     </footer> 
 </body>
 </html>
