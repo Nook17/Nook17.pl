@@ -1,5 +1,37 @@
-body
-{
-	background-color: gray;
+body {
+	background-color: #c3c3c3;
+    font-size: 0.75em; 
+    margin: 0 auto;
 }
+
+heared {
+    width: 100%;
+}
+
+#info {
+    width: 100%;
+    
+}
+
+#slider {
+    
+}
+
+section {
+    max-width: 750px;    
+}
+
+article {
+    
+}
+
+aside {
+    max-width: 360px;
+}
+
+footer {
+    width: 100%;
+    
+}
+
 
