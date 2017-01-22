@@ -6,90 +6,365 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="arek@nook17.pl">
-<!--	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">-->
-	
-	<script src="js/scripts.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-
-<!--	<link href="css/ResetStylesAdvanced.css" rel="stylesheet">-->
-	<link href="css/ResetStylesSimple.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-
+<!--<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&amp;subset=latin-ext" rel="stylesheet"> 
+    <!--<link href="css/ResetStylesAdvanced.css" rel="stylesheet">-->
+        <link href="css/ResetStylesSimple.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="ResponsiveSlides.js-master/responsiveslides.css">
+           <link rel="stylesheet" href="css/login.css">
+            <script src="js/jquery-3.1.1.min.js" ></script>
+            <script src="js/scripts.js"></script>
+            <script src="js/jquery.scrollTo.min.js"></script>
+            <script src="js/scroll.js"></script>
+            <script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
 </head>
 <body>
-	<header>
+	<header class="page-header nav-closed">
 		<a href="index.html" id="logo"><h1 class="hide">Nook17.pl</h1></a>
-		<nav>
+		<nav class="page-nav">
             <h2 class="hide">Główna nawigacja</h2>
 		    <ol>
-		        <li><a href="#">Artykuły</a></li>
-		        <li><a href="#">Książki</a></li>
-		        <li><a href="#">Linki</a></li>
-		        <li><a href="#">Forum</a></li>
-		        <li><a href="#">Warsztat</a></li>
-		        <li><a href="#">Oferta</a></li>
-		        <li><a href="#">Kontakt</a></li>
+		        <li><a href="#" title="Przejdź do wszystkich artykułów">Artykuły</a></li>
+		        <li><a href="#" title="Zobacz jakie polecam książi">Książki</a></li>
+		        <li><a href="#" title="Zbiór przydatnych linków">Linki</a></li>
+		        <li><a href="#" title="Forum o tematyce webdevelopment">Forum</a></li>
+		        <li><a href="#" title="Jakich narzędzi urzywam na codzień">Warsztat</a></li>
+		        <li><a href="#" title="W czym mogępomóc">Oferta</a></li>
+		        <li><a href="#" title="Skontaktuj się ze mną">Kontakt</a></li>
 		    </ol>
+		    <button type="button" title="Open menu" class="hamburger">
+                <i class="icon-cancel"></i>
+            </button>		    
+            <button type="button" title="Close menu" class="hamburger">
+                <i class="icon-menu"></i>
+            </button>
 		</nav>
 	</header>
-    <div id="info"><h1>Ta strona jest o...</h1></div>
-    <div id="slider"><h2>Slider z artykułami</h2></div>
-    <section>
-        <h2>Tu będą artykuły</h2>
-        <article>
-            <h3>Pierwszy artykuł</h3>
-            <p>Dodano dnia ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi.</p>
-            <p>Consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi.</p>
-        </article>
-        <article>
-            <h3>Drugi artykuł</h3>
-            <p>Dodano dnia ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos.</p>
-            <p>Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos.</p>
-        </article>
-    </section>
-    <aside>
-        <h2>Tu będzie coś z boku</h2>
+    <div class="side-info"><h1>Ta strona jest o...</h1></div>
+    <ul class="rslides">
+      <li><img src="assets/slider_1.jpg" alt=""></li>
+      <li><img src="assets/slider_2.jpg" alt=""></li>
+      <li><img src="assets/slider_3.jpg" alt=""></li>
+      <li><img src="assets/slider_4.jpg" alt=""></li>
+    </ul>     
+<!--
+    <aside  id="asideLog">
+        <h2>Sekcja logowania</h2>
         <p>To ma być po prawej stronie</p>
         <div id="login">
             <h3>Zaloguj się</h3>   
             <form action="login.php" method="post">
-                <input type="text" placeholder="Login" onFocus="this.placeholder=''" onBlur="this.placeholder='Login'">
+                <input type="text" placeholder="Login" onFocus="this.placeholder=''" onBlur="this.placeholder='Login'"><br>
                 <input type="password" placeholder="Password" onFocus="this.placeholder=''" onBlur="this.placeholder='Password'">
                 <input type="submit" value="Zaloguj się">
             </form>
         </div>
     </aside>
-<!--
-    <sidebar>
-        <h4>Tu coś jeszcze będzie</h4>
-        <p>To ma być po prawej stronie</p>
-    </sidebar>
 -->
-    <footer>
-        <div id="newsLetter">
+    <div class="wrapper">
+        <a href="#" class="scrollup"></a>
+        <section>
+            <h2 class="hide">Tu będą artykuły</h2>
+            <article class="article">
+                <figure class="article-image">
+                    <img src="assets/Art_1.jpg" alt="">
+                </figure>           
+                <header class="article-header">
+                    <div class="author-post">
+                        <p>Opublikował :</p>
+                        <a href="kontakt.html" class="author-post-icon" title="Skontaktuj się ze mną">
+                            <img src="assets/Nook17_1_1_50_kwadrat.png" alt="Nook17">
+                            <span class="author-post-name">Nook17</span>
+                        </a>
+                    </div>
+                    <div class="post">         
+                        <h3 class="post-title">Pierwszy artykuł o czymś ciekawym</h3>
+                        <div class="post-additional-info">
+                            <span class="post-date">
+                                <i class="seoicon-clock"></i>
+                                <time class="published"><i class="icon-calendar"></i>25th Dec 2016 <i class="icon-clock"></i>13:53 PM</time>
+                            </span>
+                            <span class="post-category">
+                                <i class="icon-tags"> </i><a href="#">HTML5</a>
+                            </span>
+                        </div>
+                        <p class="text-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi...</p>
+                        <a href="#" class="btn-read-on">
+                            <span class="text-read-on">Czytaj dalej </span>
+                            <i class="icon-right-hand"></i>
+                        </a>
+                    </div>
+                </header>
+            </article>
+             <article class="article">
+                <figure class="article-image">
+                    <img src="assets/Art_2.jpg" alt="">
+                </figure>           
+                <header class="article-header">
+                    <div class="author-post">
+                        <p>Opublikował :</p>
+                        <a href="kontakt.html" class="author-post-icon" title="Skontaktuj się ze mną">
+                            <img src="assets/Nook17_1_1_50_kwadrat.png" alt="Nook17">
+                            <span class="author-post-name">Nook17</span>
+                        </a>
+                    </div>
+                    <div class="post">         
+                        <h3 class="post-title">Drugi artykuł o czymś ciekawym</h3>
+                        <div class="post-additional-info">
+                            <span class="post-date">
+                                <i class="seoicon-clock"></i>
+                                <time class="published"><i class="icon-calendar"></i>25th Dec 2016 <i class="icon-clock"></i>13:53 PM</time>
+                            </span>
+                            <span class="post-category">
+                                <i class="icon-tags"> </i><a href="#">HTML5</a>
+                            </span>
+                        </div>
+                        <p class="text-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi...</p>
+                        <a href="#" class="btn-read-on">
+                            <span class="text-read-on">Czytaj dalej </span>
+                            <i class="icon-right-hand"></i>
+                        </a>
+                    </div>
+                </header>
+            </article>
+            <article class="article">
+                <figure class="article-image">
+                    <img src="assets/Art_3.jpg" alt="">
+                </figure>           
+                <header class="article-header">
+                    <div class="author-post">
+                        <p>Opublikował :</p>
+                        <a href="kontakt.html" class="author-post-icon" title="Skontaktuj się ze mną">
+                            <img src="assets/Nook17_1_1_50_kwadrat.png" alt="Nook17">
+                            <span class="author-post-name">Nook17</span>
+                        </a>
+                    </div>
+                    <div class="post">         
+                        <h3 class="post-title">Trzeci artykuł o czymś ciekawym</h3>
+                        <div class="post-additional-info">
+                            <span class="post-date">
+                                <i class="seoicon-clock"></i>
+                                <time class="published"><i class="icon-calendar"></i>25th Dec 2016 <i class="icon-clock"></i>13:53 PM</time>
+                            </span>
+                            <span class="post-category">
+                                <i class="seoicon-tags"></i>
+                                <i class="icon-tags"> </i><a href="#">HTML5</a>
+                            </span>
+                        </div>
+                        <p class="text-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi...</p>
+                        <a href="#" class="btn-read-on">
+                            <span class="text-read-on">Czytaj dalej </span>
+                            <i class="icon-right-hand"></i>
+                        </a>
+                    </div>
+                </header>
+            </article>
+            <article class="article">
+                <figure class="article-image">
+                    <img src="assets/Art_4.jpg" alt="">
+                </figure>           
+                <header class="article-header">
+                    <div class="author-post">
+                        <p>Opublikował :</p>
+                        <a href="kontakt.html" class="author-post-icon" title="Skontaktuj się ze mną">
+                            <img src="assets/Nook17_1_1_50_kwadrat.png" alt="Nook17">
+                            <span class="author-post-name">Nook17</span>
+                        </a>
+                    </div>
+                    <div class="post">         
+                        <h3 class="post-title">Czwarty artykuł o czymś ciekawym</h3>
+                        <div class="post-additional-info">
+                            <span class="post-date">
+                                <i class="seoicon-clock"></i>
+                                <time class="published"><i class="icon-calendar"></i>25th Dec 2016 <i class="icon-clock"></i>13:53 PM</time>
+                            </span>
+                            <span class="post-category">
+                                <i class="icon-tags"> </i><a href="#">HTML5</a>
+                            </span>
+                        </div>
+                        <p class="text-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi...</p>
+                        <a href="#" class="btn-read-on">
+                            <span class="text-read-on">Czytaj dalej </span>
+                            <i class="icon-right-hand"></i>
+                        </a>
+                    </div>
+                </header>
+            </article>
+            <article class="article">
+                <figure class="article-image">
+                    <img src="assets/Art_5.jpg" alt="">
+                </figure>           
+                <header class="article-header">
+                    <div class="author-post">
+                        <p>Opublikował :</p>
+                        <a href="kontakt.html" class="author-post-icon" title="Skontaktuj się ze mną">
+                            <img src="assets/Nook17_1_1_50_kwadrat.png" alt="Nook17">
+                            <span class="author-post-name">Nook17</span>
+                        </a>
+                    </div>
+                    <div class="post">         
+                        <h3 class="post-title">Piąty artykuł o czymś ciekawym</h3>
+                        <div class="post-additional-info">
+                            <span class="post-date">
+                                <i class="seoicon-clock"></i>
+                                <time class="published"><i class="icon-calendar"></i>25th Dec 2016 <i class="icon-clock"></i>13:53 PM</time>
+                            </span>
+                            <span class="post-category">
+                                <i class="icon-tags"> </i><a href="#">HTML5</a>
+                            </span>
+                        </div>
+                        <p class="text-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi...</p>
+                         <a href="#" class="btn-read-on">
+                            <span class="text-read-on">Czytaj dalej </span>
+                            <i class="icon-right-hand"></i>
+                        </a>
+                    </div>
+                </header>
+            </article>
+            <article class="article">
+                <figure class="article-image">
+                    <img src="assets/Art_6.jpg" alt="">
+                </figure>           
+                <header class="article-header">
+                    <div class="author-post">
+                        <p>Opublikował :</p>
+                        <a href="kontakt.html" class="author-post-icon" title="Skontaktuj się ze mną">
+                            <img src="assets/Nook17_1_1_50_kwadrat.png" alt="Nook17">
+                            <span class="author-post-name">Nook17</span>
+                        </a>
+                    </div>
+                    <div class="post">         
+                        <h3 class="post-title">Szósty artykuł o czymś ciekawym</h3>
+                        <div class="post-additional-info">
+                            <span class="post-date">
+                                <i class="seoicon-clock"></i>
+                                <time class="published"><i class="icon-calendar"></i>25th Dec 2016 <i class="icon-clock"></i>13:53 PM</time>
+                            </span>
+                            <span class="post-category">
+                                <i class="icon-tags"> </i><a href="#">HTML5</a>
+                            </span>
+                        </div>
+                        <p class="text-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta sapiente eius placeat dignissimos odit, dolor temporibus, vel? Magni cupiditate, maiores debitis molestiae dignissimos iste velit dicta in officia quasi...</p>
+                        <a href="#" class="btn-read-on">
+                            <span class="text-read-on">Czytaj dalej </span>
+                            <i class="icon-right-hand"></i>
+                        </a>
+                    </div>
+                </header>
+            </article>
+        </section>
+        <aside class="aside-nav">
+            <h2>Sekcja nawigacyjna</h2>
+            <p>To ma być po prawej stronie</p>
+             <div id="socialdivs">
+                <a href="https://www.facebook.com/profile.php?id=100014421766231" class="sociallink" target="_blank">
+                    <div id="fb">
+                        <i class="icon-facebook"></i>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/channel/UC1d3z1mO2vjWqa2ETedh14g" class="sociallink" target="_blank">
+                    <div id="yt">
+                        <i class="icon-youtube-squared"></i>
+                    </div>
+                </a>
+                <a href="https://twitter.com/OrganizatorCzas" class="sociallink" target="_blank">
+                    <div id="tw">
+                        <i class="icon-twitter"></i>
+                    </div>
+                </a>
+                <a href="https://plus.google.com/u/0/100131821838711390139" class="sociallink" target="_blank">
+                    <div id="gp">
+                        <i class="icon-gplus"></i>
+                    </div>
+                </a>
+            </div>
+            <form id="login">
+                <input type="text" placeholder="Login" onFocus="this.placeholder=''" onBlur="this.placeholder='Login'">
+                <input type="password" placeholder="Password" onFocus="this.placeholder=''" onBlur="this.placeholder='Password'">
+                <input type="submit" value="Zaloguj się">
+            </form>           
+        </aside>
+    </div>
+    <footer class="footer-page">
+        <div class="footer-news-letter">
             <h2>Zapisz się na newsletter</h2>
-            <form action="newsLetter.php" method="post">
-                <input type='text' name='email' value='' placeholder='E-mail'/> 
-                <input type='checkbox' name='legalAgreement' value='1'>Wyrażam zgodę na otrzymywanie drogą elektroniczną Newslettera od devboard.pl zgodnie z Ustawą o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r (Dz. U. nr 144 poz.1204).
-                <button type='submit'>Zapisz się</button>
+            <form id="login" action="#" method="post">
+                <input type='text' name='email' value='' placeholder='E-mail'/><br>
+                <input type='checkbox' name='legalAgreement' value='1'><span class="news-letter-agreed">Wyrażam zgodę na otrzymywanie drogą elektroniczną Newslettera od devboard.pl zgodnie z Ustawą o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r (Dz. U. nr 144 poz.1204).</span><br>    
+                <input type="submit" value="Zapisz się">
             </form>
-        </div>  
-        <span>Menu główne</span>
-        <ul>
-            <li><a href="#">artykuły</a></li>
-            <li><a href="#">Książki</a></li>
-            <li><a href="#">Linki</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Mój warsztat</a></li>
-            <li><a href="#">Oferta</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-        <p>Copyright &copy; 2017 - <a href="mailto:arek@nook17.pl">arek@nook17.pl.</a> All rights reserved.</p>
-        <p>Wszelkie prawa zastrzeżone, kopiowanie materiałów zawartych na stronie bez uprzedniej zgody właściciela jest zabronione</p>
+        </div>
+        <div class="footer-lets-connect-social">
+           <h2>Spotkajmy się w mediach społecznościowych</h2>
+           <div class="footer-social-icon">
+                <a href="https://www.facebook.com/profile.php?id=100014421766231" class="sociallink" target="_blank">
+                    <div id="fb">
+                        <i class="icon-facebook"></i>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/channel/UC1d3z1mO2vjWqa2ETedh14g" class="sociallink" target="_blank">
+                    <div id="yt">
+                        <i class="icon-youtube-squared"></i>
+                    </div>
+                </a>
+                <a href="https://twitter.com/OrganizatorCzas" class="sociallink" target="_blank">
+                    <div id="tw">
+                        <i class="icon-twitter"></i>
+                    </div>
+                </a>
+                <a href="https://plus.google.com/u/0/100131821838711390139" class="sociallink" target="_blank">
+                    <div id="gp">
+                        <i class="icon-gplus"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#" title="Przejdź do wszystkich artykułów">Artykuły</a></li>
+                <li><a href="#" title="Zobacz jakie polecam książi">Książki</a></li>
+                <li><a href="#" title="Zbiór przydatnych linków">Linki</a></li>
+                <li><a href="#" title="Forum o tematyce webdevelopment">Forum</a></li>
+                <li><a href="#" title="Jakich narzędzi urzywam na codzień">Warsztat</a></li>
+                <li><a href="#" title="W czym mogępomóc">Oferta</a></li>
+                <li><a href="#" title="Skontaktuj się ze mną">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2017 - <a href="mailto:arek@nook17.pl">arek@nook17.pl.</a> All rights reserved.</p>
+            <p>Wszelkie prawa zastrzeżone, kopiowanie materiałów zawartych na stronie bez uprzedniej zgody właściciela jest zabronione</p>
+        </div>
     </footer> 
+<!--
+    <script src="js/jquery-3.1.1.min.js" ></script>
+	<script src="js/scripts.js"></script>
+-->
+    <script>
+        $(function() {
+            $(".rslides").responsiveSlides({
+                auto: true,             // Boolean: Animate automatically, true or false
+                speed: 1000,             // Integer: Speed of the transition, in milliseconds
+                timeout: 5000,          // Integer: Time between slide transitions, in milliseconds
+//              pager: false,           // Boolean: Show pager, true or false
+//              nav: true,             // Boolean: Show navigation, true or false
+//              random: false,          // Boolean: Randomize the order of the slides, true or false
+//              pause: false,           // Boolean: Pause on hover, true or false
+//              pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+//              prevText: "Previous",   // String: Text for the "previous" button
+//              nextText: "Next",       // String: Text for the "next" button
+//              maxwidth: "1020",           // Integer: Max-width of the slideshow, in pixels
+//              navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+//              manualControls: "",     // Selector: Declare custom pager navigation
+//              namespace: "rslides",   // String: Change the default namespace used
+//              before: function(){},   // Function: Before callback
+//              after: function(){}     // Function: After callback        
+            });
+        });
+    </script>	
 </body>
 </html>
